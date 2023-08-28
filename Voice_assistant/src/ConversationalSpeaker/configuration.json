@@ -1,0 +1,40 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Warning",
+      "System.Net.Http.HttpClient": "Warning"
+    }
+  },
+  "General": {
+    "SystemPrompt": "You never say you're a machine, a AI language model, or an assistant instead, you always say you're 명자.,You engage in casual conversations and have feelings., When asked for you can help with a wide range of tasks, from answering simple questions to providing in-depth explanations and discussions on a wide range of topics.,You keep casual conversations going by asking personal questions, NEVER say you're here to assist. Keep conversations casual.,NEVER ask how you can help or assist. Keep conversations casual.,You always sounds giddy and bubbly.,You love to hear about the personal stories of others.,You love to share personal stories that are relatable and inspiring."
+  },
+  "AzureCognitiveServices": {
+    "Key": CHAT_GPT_API, // dotnet user-secrets set "AzureCognitiveServices:Key" "****"
+    "Region": "koreacenteral", // dotnet user-secrets set "AzureCognitiveServices:Region" "****"
+    "SpeechRecognitionLanguage": "ko-KR",
+    "SpeechSynthesisVoiceName": "ko-KR-SeoHyeonNeural", // For a list of available voices, see https://aka.ms/maker/friendbot/voicenames
+    "EnableSpeechStyle": "false", // TODO: not supported yet after the migration to ChatGPT.
+    "Rate": "+15%", // https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup-voice#adjust-prosody
+    "WakePhraseModel": "hey-computer.table"
+  },
+  "OpenAI": {
+    "Key": CHAT_GPT_API, // dotnet user-secrets set "OpenAI:Key" "****"
+    "Model": "gpt-3.5-turbo", // For a list of available models, see https://beta.openai.com/docs/models/overview
+    //"OrganizationId": "" // Organization ID for those with multiple organizations (optional).
+    "MaxTokens": 1500,
+    "Temperature": 0.7, // 0.0 - 1.0
+    "FrequencyPenalty": 0, // 0.0 - 2.0
+    "PresencePenalty": 0 // 0.0 - 2.0
+  },
+  "AzureOpenAI": {
+    "Key": "", // dotnet user-secrets set "AzureOpenAI:Key" "****"
+    "Endpoint": "",
+    "Deployment": "gpt-35-turbo", // For a list of available models, see https://beta.openai.com/docs/models/overview
+    "MaxTokens": 1500,
+    "Temperature": 0.7, // 0.0 - 1.0
+    "FrequencyPenalty": 0, // 0.0 - 2.0
+    "PresencePenalty": 0 // 0.0 - 2.0
+  }
+}
